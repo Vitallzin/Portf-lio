@@ -1,0 +1,79 @@
+.contact-card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1fr);
+  gap: 28px;
+  padding: 28px;
+}
+
+.contact-copy {
+  display: grid;
+  align-content: center;
+  gap: 20px;
+}
+
+.contact-copy h2 {
+  padding-bottom: 0.08em;
+  color: #ffffff;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 1.08;
+}
+
+.contact-copy p {
+  max-width: 620px;
+  color: #e8ddf5;
+  line-height: 1.8;
+}
+
+.contact-form {
+  display: grid;
+  gap: 14px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius);
+  background: rgba(5, 5, 9, 0.34);
+}
+
+.contact-form label {
+  display: grid;
+  gap: 8px;
+  color: #ffffff;
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.07);
+  outline: none;
+  padding: 12px 13px;
+  resize: vertical;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: rgba(255, 79, 216, 0.7);
+  box-shadow: 0 0 0 4px rgba(255, 79, 216, 0.12);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.42);
+}
+
+.contact-form .button {
+  border: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .contact-card {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,14 @@
+.soft-skill-card {
+  display: grid;
+  gap: 14px;
+}
+
+.soft-skill-card h3 {
+  color: #ffffff;
+  font-size: 1.28rem;
+}
+
+.soft-skill-card p {
+  color: var(--muted);
+  line-height: 1.7;
+}

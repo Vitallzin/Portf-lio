@@ -1,0 +1,28 @@
+.section-header {
+  display: grid;
+  justify-items: start;
+  gap: 14px;
+  margin-bottom: 34px;
+  text-align: left;
+}
+
+.section-header div {
+  max-width: 760px;
+}
+
+.section-header h2 {
+  color: transparent;
+  background: linear-gradient(135deg, #b65cff 0%, #ff58d7 72%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding-bottom: 0.08em;
+  font-size: clamp(3rem, 5vw, 4.6rem);
+  line-height: 1.12;
+}
+
+.section-header p {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 1.12rem;
+  line-height: 1.55;
+}

@@ -1,0 +1,124 @@
+.about-grid {
+  padding-top: 8px;
+}
+
+.about-card {
+  min-height: 190px;
+}
+
+.education-card,
+.experience-card {
+  min-height: 438px;
+}
+
+.about-grid h3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+.about-grid h3::before {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 999px;
+  color: #e9d8ff;
+  background: rgba(157, 77, 255, 0.22);
+  content: '✦';
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
+
+.about-grid p {
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+
+.placeholder-copy {
+  padding: 16px 18px;
+  border: 1px dashed rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.placeholder-tag {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  color: var(--secondary);
+  background: rgba(255, 79, 216, 0.12);
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.placeholder-tag::before {
+  content: '✎';
+}
+
+.mini-timeline {
+  position: relative;
+  display: grid;
+  gap: 24px;
+  padding-left: 18px;
+}
+
+.mini-timeline::before {
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: 6px;
+  width: 1px;
+  background: linear-gradient(to bottom, rgba(255, 79, 216, 0.55), rgba(157, 77, 255, 0.04));
+  content: '';
+}
+
+.mini-timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 6px;
+}
+
+.mini-timeline-item::before {
+  position: absolute;
+  top: 4px;
+  left: -18px;
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: var(--secondary);
+  box-shadow: 0 0 18px rgba(255, 79, 216, 0.9);
+  content: '';
+}
+
+.mini-timeline-item span {
+  color: var(--subtle);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.mini-timeline-item strong {
+  display: block;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.mini-timeline-item p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}

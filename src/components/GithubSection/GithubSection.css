@@ -1,0 +1,50 @@
+.github-card span {
+  color: var(--primary-strong);
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.github-card strong {
+  display: block;
+  margin-top: 12px;
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-size: 1.55rem;
+}
+
+.github-card p {
+  margin-top: 10px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.contribution-graph-img {
+  width: 100%;
+  margin-top: 18px;
+  border-radius: 12px;
+  filter: invert(0.92) hue-rotate(180deg) saturate(1.4);
+}
+
+.github-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.github-cta h3 {
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+.github-cta p {
+  margin-top: 8px;
+  color: var(--muted);
+}
+
+@media (max-width: 760px) {
+  .github-cta {
+    display: grid;
+  }
+}

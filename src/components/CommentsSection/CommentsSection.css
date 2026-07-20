@@ -1,0 +1,22 @@
+.comments-card {
+  min-height: 160px;
+  padding: 28px;
+}
+
+.giscus-container {
+  width: 100%;
+}
+
+.comments-pending {
+  padding: 16px 18px;
+  border: 1px dashed rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.comments-pending a {
+  color: var(--primary-strong);
+  font-weight: 800;
+}

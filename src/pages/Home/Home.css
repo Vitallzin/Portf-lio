@@ -1,0 +1,25 @@
+.app-shell {
+  position: relative;
+}
+
+.cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 26px;
+  height: 26px;
+  margin: -13px 0 0 -13px;
+  pointer-events: none;
+  opacity: 0;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(157, 77, 255, 0.9), rgba(255, 79, 216, 0.5) 46%, transparent 72%);
+  filter: blur(2px);
+  transition: opacity 220ms ease;
+}
+
+@media (max-width: 860px), (pointer: coarse) {
+  .cursor-glow {
+    display: none;
+  }
+}
