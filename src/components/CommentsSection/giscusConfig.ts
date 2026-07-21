@@ -2,10 +2,10 @@
 // Gere os valores reais em https://giscus.app depois de habilitar
 // "Discussions" no seu repositório do GitHub.
 export const giscusConfig = {
-  repo: 'Vitallzin/myportfolio' as `${string}/${string}`,
-  repoId: 'PREENCHA_REPO_ID',
+  repo: 'Vitallzin/Portf-lio' as `${string}/${string}`,
+  repoId: 'R_kgDOTeifaQ',
   category: 'Comentários',
-  categoryId: 'PREENCHA_CATEGORY_ID',
+  categoryId: 'DIC_kwDOTeifac4DBne3',
 }
 
 export const isGiscusConfigured =
