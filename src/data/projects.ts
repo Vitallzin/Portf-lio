@@ -41,19 +41,19 @@ export function getScreenshotUrl(project: ProjectDetail) {
 
 export const projectsData: ProjectDetail[] = [
   {
-    slug: 'pokedex',
-    name: 'Pokedex',
-    tagline: 'Catálogo de Pokémon consumindo API pública.',
+    slug: 'boteco-familia',
+    name: 'Boteco Família',
+    tagline: 'Site para gerenciar o bar Boteco da Família.',
     description:
-      'A Pokédex é uma aplicação web desenvolvida para oferecer uma experiência completa de exploração do universo Pokémon. Além da consulta de informações detalhadas sobre cada Pokémon, a plataforma permite comparar estatísticas, criar times personalizados, gerenciar favoritos e utilizar filtros avançados para facilitar a navegação. O projeto integra a PokéAPI para obtenção dos dados oficiais e o Firebase para autenticação e armazenamento das informações de cada usuário, resultando em uma aplicação dinâmica, responsiva e com recursos personalizados.',
-    highlights: ['Catálogo completo de Pokémon com informações detalhadas.', 'Interface intuitiva e responsiva para uma experiência de usuário agradável.', 'Integração com a API pública do PokéAPI para obter dados atualizados.'],
-    techStack: ['React', 'TypeScript','Firebase','Axios', 'Framer Motion', 'Vite'],
+      'O Boteco Família é um site desenvolvido para gerenciar o funcionamento do boteco da família. O projeto foi criado com foco em oferecer uma interface simples, intuitiva e responsiva, permitindo ao usuário gerenciar os produtos, pedidos e clientes de forma eficiente. Durante o desenvolvimento, foram aplicados conceitos como consumo de APIs externas, componentização, gerenciamento de estado, manipulação de dados assíncronos e criação de uma experiência moderna para o usuário',
+    highlights: ['Gerenciamento de produtos e estoque.', 'Registro e acompanhamento de pedidos.', 'Cadastro e gerenciamento de clientes.', 'Interface responsiva para desktop, tablet e dispositivos móveis.', 'Atualização instantânea dos resultados após cada ação.'],
+    techStack: ['TypeScript', 'React', 'Vite', 'Firebase'],
     tools: ['ESLint', 'Vercel', 'Git', 'GitHub'],
-    status: 'Projeto pessoal',
-    demoUrl: "https://pokedex-ivory-iota.vercel.app",
+    status: 'Projeto comercial',
+    demoUrl: 'https://boteco-familia.vercel.app/',
     screenshot: null,
-    repoUrl: 'https://github.com/Vitallzin/pokedex',
-    cover: 'linear-gradient(135deg, #9d4dff, #ff4fd8)',
+    repoUrl: 'https://github.com/Vitallzin/BotecoFamilia',
+    cover: 'linear-gradient(135deg, #ff4fd8, #181826)',
   },
   {
     slug: 'lies-of-p-wiki',
@@ -106,6 +106,20 @@ export const projectsData: ProjectDetail[] = [
     repoUrl: 'https://github.com/Vitallzin/ConvertorAutomatic',
     cover: 'linear-gradient(135deg, #ff4fd8, #181826)',
   },
-  
+  {
+    slug: 'pokedex',
+    name: 'Pokedex',
+    tagline: 'Catálogo de Pokémon consumindo API pública.',
+    description:
+      'A Pokédex é uma aplicação web desenvolvida para oferecer uma experiência completa de exploração do universo Pokémon. Além da consulta de informações detalhadas sobre cada Pokémon, a plataforma permite comparar estatísticas, criar times personalizados, gerenciar favoritos e utilizar filtros avançados para facilitar a navegação. O projeto integra a PokéAPI para obtenção dos dados oficiais e o Firebase para autenticação e armazenamento das informações de cada usuário, resultando em uma aplicação dinâmica, responsiva e com recursos personalizados.',
+    highlights: ['Catálogo completo de Pokémon com informações detalhadas.', 'Interface intuitiva e responsiva para uma experiência de usuário agradável.', 'Integração com a API pública do PokéAPI para obter dados atualizados.'],
+    techStack: ['React', 'TypeScript','Firebase','Axios', 'Framer Motion', 'Vite'],
+    tools: ['ESLint', 'Vercel', 'Git', 'GitHub'],
+    status: 'Projeto pessoal',
+    demoUrl: "https://pokedex-ivory-iota.vercel.app",
+    screenshot: null,
+    repoUrl: 'https://github.com/Vitallzin/pokedex',
+    cover: 'linear-gradient(135deg, #9d4dff, #ff4fd8)',
+  },
   
 ]
