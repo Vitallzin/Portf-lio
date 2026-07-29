@@ -4,6 +4,7 @@ import { getScreenshotUrl, projectsData, type ProjectDetail } from '../../data/p
 import { HOME_SCROLL_KEY } from '../../pages/Home/scrollRestore'
 import BentoCard from '../BentoCard'
 import SectionHeader from '../SectionHeader'
+import TechBadge from '../TechBadge'
 import './ProjectsSection.css'
 
 const VISIBLE_COUNT = 3
@@ -37,9 +38,7 @@ function ProjectCard({ project, delay, reveal = true }: { project: ProjectDetail
         </div>
         <div className="badge-list">
           {project.techStack.map((tech) => (
-            <span className="badge" key={tech}>
-              {tech}
-            </span>
+            <TechBadge name={tech} key={tech} />
           ))}
         </div>
         <div className="button-row">

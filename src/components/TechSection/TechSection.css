@@ -61,6 +61,17 @@
   font-size: 0.62rem;
 }
 
+.tech-badge .icon-token-logo {
+  color: #15141f;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.tech-badge .icon-token-img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
 .tech-badge:hover {
   transform: translateY(-2px);
   border-color: rgba(255, 79, 216, 0.48);
@@ -68,6 +79,6 @@
   box-shadow: 0 10px 26px rgba(255, 79, 216, 0.18);
 }
 
-.tech-badge:hover .icon-token {
+.tech-badge:hover .icon-token:not(.icon-token-logo) {
   background: linear-gradient(135deg, var(--secondary), var(--primary));
 }

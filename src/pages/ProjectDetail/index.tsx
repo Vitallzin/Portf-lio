@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Navigate, useNavigate, useParams } from 'react-router-dom'
 import { getDemoUrl, getScreenshotUrl, getSiteDomain, projectsData } from '../../data/projects'
+import TechBadge from '../../components/TechBadge'
 import './ProjectDetail.css'
 
 const EXIT_DURATION = 260
@@ -113,9 +114,7 @@ function ProjectDetail() {
             <h3>Tecnologias</h3>
             <div className="badge-list">
               {project.techStack.map((tech) => (
-                <span className="badge" key={tech}>
-                  {tech}
-                </span>
+                <TechBadge name={tech} key={tech} />
               ))}
             </div>
           </div>
@@ -124,9 +123,7 @@ function ProjectDetail() {
             <h3>Ferramentas</h3>
             <div className="badge-list">
               {project.tools.map((tool) => (
-                <span className="badge" key={tool}>
-                  {tool}
-                </span>
+                <TechBadge name={tool} key={tool} />
               ))}
             </div>
           </div>

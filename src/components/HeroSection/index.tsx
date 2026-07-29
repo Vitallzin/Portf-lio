@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { heroBadges, profile, quickStats } from '../../data/portfolio'
 import BentoCard from '../BentoCard'
+import TechBadge from '../TechBadge'
 import './HeroSection.css'
 
 function HeroSection() {
@@ -28,9 +29,7 @@ function HeroSection() {
         </div>
         <div className="badge-list" aria-label="Tecnologias principais">
           {heroBadges.map((badge) => (
-            <span className="badge" key={badge}>
-              {badge}
-            </span>
+            <TechBadge name={badge} key={badge} />
           ))}
         </div>
       </BentoCard>

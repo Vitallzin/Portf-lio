@@ -1,4 +1,5 @@
 import { techCategories } from '../../data/portfolio'
+import { getTechIcon, getTechImage } from '../../data/techIcons'
 import BentoCard from '../BentoCard'
 import SectionHeader from '../SectionHeader'
 import './TechSection.css'
@@ -29,12 +30,26 @@ function TechSection() {
           >
             <h3>{category.title}</h3>
             <div className="tech-list">
-              {category.items.map((item) => (
-                <span className="tech-badge" key={item}>
-                  <span className="icon-token">{getInitials(item)}</span>
-                  {item}
-                </span>
-              ))}
+              {category.items.map((item) => {
+                const Icon = getTechIcon(item)
+                const image = getTechImage(item)
+                const hasVisual = Boolean(Icon || image)
+
+                return (
+                  <span className="tech-badge" key={item}>
+                    <span className={`icon-token${hasVisual ? ' icon-token-logo' : ''}`}>
+                      {Icon ? (
+                        <Icon className="icon-token-img" aria-hidden="true" />
+                      ) : image ? (
+                        <img className="icon-token-img" src={image} alt="" loading="lazy" />
+                      ) : (
+                        getInitials(item)
+                      )}
+                    </span>
+                    {item}
+                  </span>
+                )
+              })}
             </div>
           </BentoCard>
         ))}

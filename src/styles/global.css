@@ -183,6 +183,12 @@ h3 {
   background: rgba(157, 77, 255, 0.15);
 }
 
+.badge-icon {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+}
+
 .icon-token {
   display: inline-grid;
   width: 28px;
